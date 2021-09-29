@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
-class App extends React.Component {
+class UsersFunction extends React.Component {
     constructor() {
       super();
       this.state = { users: [] };
