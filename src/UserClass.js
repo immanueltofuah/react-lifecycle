@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
-class App extends React.Component{
+class UserClass extends React.Component{
     constructor() {
         super();
         this.state = { users: []};
@@ -15,7 +15,7 @@ class App extends React.Component{
         })
         .then((users) => {
 
-            this.setstate({ users: users});
+            this.setState({ users: users});
         });
     }
 
