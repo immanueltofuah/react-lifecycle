@@ -37,7 +37,13 @@ class UserClass extends React.Component{
         return(
             <>
             {this.state.users.map((user) => {
-                return <h1 key={user.id}>{user.name}</h1>;
+                return(
+                    <div  key={user.id}>
+                 <h1>{user.name}</h1>
+                 <h1>{user.username}</h1>
+                 <h1>{user.email}</h1>
+                 </div>
+            )
             })}
             </>
         );
