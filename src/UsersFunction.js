@@ -45,3 +45,4 @@ function UsersFunction() {
   );
 }
 
+export default UsersFunction;
