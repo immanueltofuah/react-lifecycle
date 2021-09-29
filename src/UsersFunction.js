@@ -33,10 +33,10 @@ function UsersFunction() {
         //maps through the users state and renders an h1 containing the user's name
         users.map((user) => {
           return (
-              <div>
-          <h1 >{user.name}</h1>
-          <h1 >{user.username}</h1>
-          <h1 >{user.email}</h1>
+              <div className="background">
+          <h1 className="inputs" >{user.name}</h1>
+          <h1 className="inputs" >{user.username}</h1>
+          <h1 className="inputs" >{user.email}</h1>
           </div>
           )
         })
