@@ -38,10 +38,10 @@ class UserClass extends React.Component{
             <>
             {this.state.users.map((user) => {
                 return(
-                    <div  key={user.id}>
-                 <h1>{user.name}</h1>
-                 <h1>{user.username}</h1>
-                 <h1>{user.email}</h1>
+                    <div className="background"  key={user.id}>
+                 <h1 className="inputs">{user.name}</h1>
+                 <h1 className="inputs">{user.username}</h1>
+                 <h1 className="inputs">{user.email}</h1>
                  </div>
             )
             })}
