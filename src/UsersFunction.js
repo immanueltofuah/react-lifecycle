@@ -9,7 +9,7 @@ function UsersFunction() {
   //Asynchronous function which gets users from server
   async function getUsers() {
     //gets data using axios from url and stores it in res variable
-    const res = await axios.get("https://jsonplaceholder.typicode.com/photos");
+    const res = await axios.get("https://jsonplaceholder.typicode.com/users");
 
     //updates the users state to contain the response
     setUsers(res.data);
@@ -33,12 +33,12 @@ function UsersFunction() {
         //maps through the users state and renders an h1 containing the user's name
         users.map((user) => {
           return (
-              <div className="background">
-          <h1 className="inputs" >{user.name}</h1>
-          <h1 className="inputs" >{user.username}</h1>
-          <h1 className="inputs" >{user.email}</h1>
-          </div>
-          )
+            <div className="back" key={user.id}>
+              <h1 className="inputs">{user.name}</h1>
+              <h1 className="inputs">{user.username}</h1>
+              <h1 className="inputs">{user.email}</h1>
+            </div>
+          );
         })
       }
     </>
